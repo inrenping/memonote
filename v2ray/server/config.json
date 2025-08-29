@@ -1,0 +1,185 @@
+{
+  "inbounds": [
+    {
+      "port": 1990,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            "level": 1,
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/xxx",
+          "headers": {
+            "Host": "inrenping.icu"
+          }
+        }
+      },
+      "listen": "127.0.0.1"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "adblock"
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "adblock",
+        "domain": [
+          "cn.pornhub.com",
+          "twitter.com",
+          "x.com",
+          "domain:twitter.com",
+          "domain:x.com",
+          "domain:pronhub.com",
+          "domain:xvideos.com",
+          "domain:xvideos-cdn.com",
+          "domain:xhamster.com",
+          "domain:xnxx.com",
+          "domain:redtube.com",
+          "domain:eporner.com",
+          "domain:hqporner.com",
+          "domain:youporn.com",
+          "domain:beeg.com",
+          "domain:ok.xxx",
+          "domain:pornhd.com",
+          "domain:thefantazy.com",
+          "domain:spankbang.com",
+          "domain:theporndude.com",
+          "domain:sexgps.net",
+          "domain:txxx.com",
+          "domain:7mmtv.sx",
+          "domain:4kporn.xxx",
+          "domain:upornia.com",
+          "domain:pornone.com",
+          "domain:thisvid.com",
+          "domain:xpaja.net",
+          "domain:motherless.com",
+          "domain:bad.news",
+          "domain:cao.best",
+          "domain:jable.tv",
+          "domain:txscz.com",
+          "domain:buliangvip.com",
+          "domain:huangse.love",
+          "domain:anyedh.net",
+          "domain:fulirukou.com",
+          "domain:or.kr",
+          "domain:behance.net",
+          "domain:muerdaohang.com",
+          "domain:whichav.video",
+          "domain:cavhot.com",
+          "domain:biglist.xyz",
+          "domain:51cg1.fun",
+          "domain:51cg1.com",
+          "domain:seju.life",
+          "domain:lxsgt.uk",
+          "domain:jiao.se",
+          "domain:fuliba2023.net",
+          "domain:cgwang.life",
+          "domain:dycg66.com",
+          "domain:kanliao.one",
+          "domain:818ylw.com",
+          "domain:cgcg36.com",
+          "domain:18hlw.com",
+          "domain:hlbdy.me",
+          "domain:bl26.co",
+          "domain:51cg1.com",
+          "domain:loholidayhk.com",
+          "domain:lululu.one",
+          "domain:91porn.neocities.org",
+          "domain:baichunlink.com",
+          "domain:huaxinba.com",
+          "domain:anyedh.net",
+          "domain:mangotporn.com",
+          "domain:moefuns.com",
+          "domain:fanqianglu.com",
+          "domain:141jj.com",
+          "domain:fuli.best",
+          "domain:apiandaohang.com",
+          "domain:ailupa.com",
+          "domain:xchina.app",
+          "domain:huseseo.online",
+          "domain:thepornmap.com",
+          "domain:pornmemo.com",
+          "domain:yazhouse8.com",
+          "domain:91porny.com",
+          "domain:se-zhan.xyz",
+          "domain:iceporn.tv",
+          "domain:seqing.one",
+          "domain:umi.im",
+          "domain:avwong.com",
+          "domain:u9a9.net",
+          "domain:pornbest.org",
+          "domain:book18.org",
+          "domain:kanliao6.net",
+          "domain:155.fun",
+          "domain:8ghl.com",
+          "domain:juicem8.com",
+          "domain:eventjio.com",
+          "domain:camacaridiario.com",
+          "domain:onlinetayo.com",
+          "domain:rahmakrambo.com",
+          "domain:haydnkruger.com",
+          "domain:shengmuyuan.com",
+          "domain:eventjio.com",
+          "domain:gq1vomal97.com",
+          "domain:csb7.com",
+          "domain:jable.one",
+          "domain:qianav.one",
+          "domain:55666.cfd",
+          "domain:dnaav.com",
+          "domain:634.tv",
+          "domain:tianav.com",
+          "domain:tianav.cc",
+          "domain:missav.app",
+          "domain:missav02.cc",
+          "domain:tokyomotion.net",
+          "domain:wntheme.com",
+          "domain:thts2.top",
+          "domain:pornlulu.com",
+          "domain:naykhutx.top",
+          "domain:91cg1.com",
+          "domain:91cg2.com",
+          "domain:91cg3.com",
+          "domain:91cg4.com",
+          "domain:91cg5.com",
+          "domain:91cg6.com",
+          "domain:91cg7.com",
+          "domain:91cg8.com",
+          "domain:91cg9.com",
+          "domain:mrds66.com",
+          "domain:bsgnigij.top",
+          "domain:ktnkw.com",
+          "domain:gomezcelis.com"
+        ]
+      },
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
